@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+  .grid-section{
+    @apply w-full h-auto grid grid-cols-2 gap-[1px]
+  }
+  .column{
+    @apply w-full h-auto
+  }
