@@ -1,8 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./app/**/*.{ts,tsx,mdx}"],
+  content: ["./app/**/*.{ts,tsx,mdx}",'./components/**/*.{js,ts,jsx,tsx}',],
   theme: {
+    fontFamily: {
+      vazir: ["var(--font-Vazir)"]
+    },  
     colors: {
       'White': '#FFFFFF',
       'Extra-light': '#F5F5F7',
