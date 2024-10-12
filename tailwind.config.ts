@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./app/**/*.{ts,tsx,mdx}",'./components/**/*.{js,ts,jsx,tsx}',],
+  content: ["./app/**/*.{ts,tsx,mdx}",'./components/**/*.{ts,mdx,tsx}',],
   theme: {
     fontFamily: {
       vazir: ["var(--font-Vazir)"]
