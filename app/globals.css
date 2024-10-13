@@ -10,3 +10,10 @@
   .column{
     @apply w-full h-auto
   }
+  .flex-center {
+    @apply flex justify-center
+  }
+
+  * {
+    border: 1px solid purple;
+  }

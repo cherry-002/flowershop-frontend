@@ -1,16 +1,15 @@
-import { iconsBrand } from '@/public/icons/W300/Brands';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import React from 'react';
 
-const SectionProduct = () => {
+const SectionProduct = ({ src, alt, objPosition }: { src: StaticImport, alt: string, objPosition?: string }) => {
   return (
-    <div className='w-[25vw] h-[25vh]'>
+    <div className='w-[25vw] h-[25vh] flex flex-col'>
       <Image
-        src={iconsBrand.Apple.icon}
-        alt={iconsBrand.Apple.alt}
-        layout="responsive"
-        objectFit="contain"
-        style={{ width: '100%', height: '100%' }}
+        src={src}
+        alt={alt}
+        
+        style={{ width: '100%', height: '100%', objectFit: "cover", objectPosition: objPosition }}
       />
     </div>
   );

@@ -1,10 +1,11 @@
 import { ReactNode } from "react"
 
 
-const Column = ({ children } : { children:ReactNode }) => {
+const Column = ({ children, rows } : { children:ReactNode, rows:number }) => {
+  const height = `${rows * 25}vh`; 
   return (
-    <div className='column'>{children}</div>
+    <div className="column" style={{ height }}>{children}</div>
   )
 }
 
-export default Column
+export default Column;
